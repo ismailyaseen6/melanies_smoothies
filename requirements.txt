@@ -1,25 +1,4 @@
-definition_version: 2
-entities:
-  KitchenOrders:
-    type: streamlit
-    meta:
-      use_mixins:
-        - streamlit_shared
-    identifier:
-      name: Y3S2C8PF9SZ9Q4BJ
-      database: SMOOTHIES
-      schema: PUBLIC
-mixins:
-  streamlit_shared:
-    artifacts:
-      - pyproject.toml
-      - CustomizeYourSmoothie.py
-      - .streamlit/config.toml
-    title: KitchenOrders
-    query_warehouse: COMPUTE_WH
-    compute_pool: SYSTEM_COMPUTE_POOL_CPU
-    grants:
-      - privilege: USAGE
-        role: SYSADMIN
-        with_grant_option: true
-    main_file: CustomizeYourSmoothie.py
+# requirements.txt
+
+snowflake-snowpark-python
+streamlit
